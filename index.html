@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetacion Apple</title>
+
+    <style>
+        @font-face {
+            font-family: "apple";
+            src: url(./fonts/FontsFree-Net-SFProText-Regular.ttf);
+        }
+
+        body {
+            margin: 0;
+            font-family: "apple";
+        }
+
+        nav {
+            display: flex;
+            background-color: #000;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            width: 100vw;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        nav img {
+            width: 18px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fffa;
+            display: block;
+            padding: 1px 35px;
+        }
+
+        div.soporte {
+            background-color: #fff;
+            color: #000b;
+            text-align: center;
+            padding-top: 63px;
+        }
+
+
+        div.soporte p {
+            font-size: 0.9rem;
+        }
+
+        main section {
+            text-align: center;
+        }
+
+        main section {
+            padding-top: 50px;
+            height: 550px;
+        }
+
+        main section:first-of-type {
+            background-color: #131313;
+        }
+
+        main section:nth-of-type(2) {
+            background-color: #FAFAFA;
+        }
+
+        main section:last-of-type {
+            background-color: #000;
+        }
+
+        main section article {
+            height: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        main section:first-of-type article {
+            color: #fff;
+            background-image: url(./img/hero__dvsxv8smkkgi_largetall_2x.jpg);
+            background-position: center top;
+        }
+
+        main section:nth-of-type(2) article {
+            background-image: url(./img/hero__dvsxv8smkkgi_largetall_2x0.jpg);
+            background-position: center bottom;
+        }
+
+        main section:last-of-type article {
+            color: #fff;
+            background-image: url(./img/hero__dvsxv8smkkgi_largetall_2x1.jpg);
+            background-position: center bottom;
+        }
+
+        h2 {
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        h4 {
+            font-size: 1.4rem;
+            color: #bbb;
+            margin: 5px;
+        }
+
+        li {
+            display: inline-block;
+            padding: 5px 30px;
+        }
+
+        main a,
+        aside a {
+            text-decoration: none;
+            color: #00f;
+            font-size: 1.5rem;
+        }
+
+        aside {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 2024px;
+            min-width: 1024px;
+            text-align: center;
+        }
+
+        aside div {
+            width: 49.7%;
+            height: 550px;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 10px;
+            padding-top: 50px;
+        }
+
+        aside div:first-child {
+            background-image: url(./img/tile__cauwwcyyn9hy_large_2x1.jpg);
+        }
+
+        aside div:nth-child(2) {
+            background-image: url(./img/tile__cauwwcyyn9hy_large_2x0.jpg);
+        }
+
+        aside div:nth-child(3) {
+            background-image: url(./img/tile__cauwwcyyn9hy_large_2x2.jpg);
+        }
+
+        aside div:nth-child(4) {
+            background-image: url(./img/tile__cauwwcyyn9hy_large_2x.jpg);
+        }
+
+        aside div:nth-child(5) {
+            background-image: url(./img/rising_stars_large_2x.jpg);
+        }
+
+        aside div:nth-child(6) {
+            background-image: url(./img/tile__cauwwcyyn9hy_large_2x3.jpg);
+        }
+
+        aside div:first-child article img {
+            width: 200px;
+        }
+
+        aside div:nth-child(3) article img {
+            display: block;
+            margin: auto;
+        }
+
+        aside div:nth-child(3) article img:nth-of-type(2) {
+            width: 300px;
+        }
+
+        aside div:nth-child(6) article img {
+            width: 700px;
+        }
+
+        .white {
+            color: #fff;
+        }
+
+        footer section {
+            width: 870px;
+            margin: auto;
+        }
+
+        footer section article:first-of-type {
+            font-size: 0.8rem;
+            color: #555b;
+            border-bottom: 1px #000 solid;
+        }
+
+        footer section article:nth-of-type(2) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        footer section article:nth-of-type(2) ul {
+            width: 170px;
+        }
+
+        footer section article:nth-of-type(2) ul li {
+            font-size: 0.7rem;
+            padding-left: 0;
+            padding-right: 150px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        footer article:last-of-type {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer article:last-of-type div:first-of-type {
+            color: #555b;
+            font-size: 0.7rem;
+        }
+
+        footer article:last-of-type div:first-of-type li:not(:last-of-type){
+            border-right: 1px solid #000;
+        }
+
+        footer article:last-of-type ul{
+            margin-bottom: 0;
+        }
+
+        footer article:last-of-type div:last-of-type {
+            align-self: center;
+        }
+
+        .paragraph p {
+            padding-bottom: 10px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="">
+            <img src="./img/globalnav_apple_image__cxwwnrj0urau_large.svg" alt="">
+        </a>
+
+        <ul>
+            <li><a href="#">Mac</a></li>
+            <li><a href="#">Ipad</a></li>
+            <li><a href="#">Iphone</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">TV</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Soporte</a></li>
+        </ul>
+
+        <a href="">
+            <img src="./img/globalnav_search_image__fca9mfoh8a2q_large.svg" alt="">
+        </a>
+
+        <a href="">
+            <img src="./img/globalnav_bag_image__bmix8075eg4i_large.svg" alt="">
+        </a>
+    </nav>
+
+
+    <div class="soporte">
+        <p>Compra online y te lo enviamos gratis, rápido y sin contacto físico. Llámanos al 900 150 503 o visita nuestro
+            soporte técnico.</p>
+    </div>
+
+    <main>
+
+        <section>
+            <article>
+                <h2>IPhone SE</h2>
+                <h3>Mucho Iphone x menos :D</h3>
+                <h4>Es caro pero barato</h4>
+                <ul>
+                    <li><a href="#">Vete aquí</a></li>
+                    <li><a href="#">Vete allí</a></li>
+                </ul>
+            </article>
+
+        </section>
+        <section>
+            <article>
+                <h2>IPhone SE</h2>
+                <h3>Mucho Iphone x menos :D</h3>
+                <h4>Es caro pero barato</h4>
+                <ul>
+                    <li><a href="#">Vete aquí</a></li>
+                    <li><a href="#">Vete allí</a></li>
+                </ul>
+            </article>
+
+        </section>
+        <section>
+
+            <article>
+                <h2>IPhone SE</h2>
+                <h3>Mucho Iphone x menos :D</h3>
+                <h4>Es caro pero barato</h4>
+                <ul>
+                    <li><a href="#">Vete aquí</a></li>
+                    <li><a href="#">Vete allí</a></li>
+                </ul>
+            </article>
+        </section>
+
+
+
+
+    </main>
+
+    <aside>
+
+        <div>
+
+            <article>
+                <img src="./img/logo_tile__ex0pdbqxuuuu_large_2x.png" alt="">
+
+                <h3>Mucho Iphone x menos :D</h3>
+                <h4>Es caro pero barato</h4>
+                <ul>
+                    <li><a href="#">Vete aquí</a></li>
+                    <li><a href="#">Vete allí</a></li>
+                </ul>
+            </article>
+        </div>
+
+        <div>
+
+            <article>
+                <h2 class="white">IPhone SE</h2>
+                <h3 class="white">Mucho Iphone x menos :D</h3>
+                <h4>Es caro pero barato</h4>
+                <ul>
+                    <li><a href="#">Vete aquí</a></li>
+                    <li><a href="#">Vete allí</a></li>
+                </ul>
+            </article>
+        </div>
+        <div>
+
+            <article>
+
+                <img src="./img/logo__dcojfwkzna2q_large_2x0.png" alt="">
+
+                <img src="./img/defending_jacob_logo__b1e1tn1yev9e_large_2x.png" alt="">
+                <h3>Mucho Iphone x menos :D</h3>
+                <h4>Es caro pero barato</h4>
+                <ul>
+                    <li><a href="#">Vete aquí</a></li>
+                    <li><a href="#">Vete allí</a></li>
+                </ul>
+            </article>
+        </div>
+        <div>
+            <article>
+                <h2>IPhone SE</h2>
+                <ul>
+                    <li><a href="#">Vete aquí</a></li>
+                    <li><a href="#">Vete allí</a></li>
+                </ul>
+            </article>
+        </div>
+        <div>
+            <h2>IPhone SE</h2>
+            <h3>Mucho Iphone x menos :D</h3>
+            <h4>Es caro pero barato</h4>
+            <ul>
+                <li><a href="#">Vete aquí</a></li>
+                <li><a href="#">Vete allí</a></li>
+            </ul>
+        </div>
+        <div>
+            <article>
+                <h2>IPhone SE</h2>
+                <h3>Mucho Iphone x menos :D</h3>
+                <h4>Es caro pero barato</h4>
+                <ul>
+                    <li><a href="#">Vete aquí</a></li>
+                    <li><a href="#">Vete allí</a></li>
+                </ul>
+                <img src="./img/subhead__cbpi9w6ev4aa_large_2x.png" alt="">
+            </article>
+        </div>
+    </aside>
+    <footer>
+        <section>
+            <article class="paragraph">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias exercitationem impedit atque
+                    laboriosam repellendus numquam id earum, rerum at maxime facilis saepe beatae voluptatibus culpa cum
+                    quod, illum aliquam nisi?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias exercitationem impedit atque
+                    laboriosam repellendus numquam id earum, rerum at maxime facilis saepe beatae voluptatibus culpa cum
+                    quod, illum aliquam nisi?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias exercitationem impedit atque
+                    laboriosam repellendus numquam id earum, rerum at maxime facilis saepe beatae voluptatibus culpa cum
+                    quod, illum aliquam nisi?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias exercitationem impedit atque
+                    laboriosam repellendus numquam id earum, rerum at maxime facilis saepe beatae voluptatibus culpa cum
+                    quod, illum aliquam nisi?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias exercitationem impedit atque
+                    laboriosam repellendus numquam id earum, rerum at maxime facilis saepe beatae voluptatibus culpa cum
+                    quod, illum aliquam nisi?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias exercitationem impedit atque
+                    laboriosam repellendus numquam id earum, rerum at maxime facilis saepe beatae voluptatibus culpa cum
+                    quod, illum aliquam nisi?</p>
+            </article>
+            <article>
+                <ul>
+                    <li class="bold"><a href="#">título</a></li>
+                    <li><a href="#">amor</a></li>
+                    <li><a href="#">amor</a></li>
+                    <li><a href="#">amor</a></li>
+                    <li><a href="#">amor</a></li>
+                    <li><a href="#">amor</a></li>
+                </ul>
+                <ul>
+                    <li class="bold"><a href="#">título</a></li>
+                    <li><a href="#">amor</a></li>
+                    <li><a href="#">amor</a></li>
+                    <li><a href="#">amor</a></li>
+                    <li><a href="#">amor</a></li>
+                    <li><a href="#">amor</a></li>
+                </ul>
+                <ul>
+                    <li class="bold"><a href="#">título</a></li>
+                    <li><a href="#">amor</a></li>
+                    <li><a href="#">amor</a></li>
+                    <li><a href="#">amor</a></li>
+                    <li><a href="#">amor</a></li>
+                    <li><a href="#">amor</a></li>
+                </ul>
+                <ul>
+                    <li class="bold"><a href="#">título</a></li>
+                    <li><a href="#">amor</a></li>
+                    <li><a href="#">amor</a></li>
+                    <li><a href="#">amor</a></li>
+                    <li><a href="#">amor</a></li>
+                    <li><a href="#">amor</a></li>
+                </ul>
+                <ul>
+                    <li class="bold"><a href="#">título</a></li>
+                    <li><a href="#">amor</a></li>
+                    <li><a href="#">amor</a></li>
+                    <li><a href="#">amor</a></li>
+                    <li><a href="#">amor</a></li>
+                    <li><a href="#">amor</a></li>
+                </ul>
+            </article>
+            <article>
+                <div>
+                    <p>Más formas de comprar: encuentra un Apple Store o un distribuidor cerca de ti. O llama al 900 150
+                        503.</p>
+                    <p>Copyright © 2020 Apple Inc. Todos los derechos reservados.</p>
+                    <ul>
+                        <li><a href="#">enlace</a></li>
+                        <li><a href="#">enlace</a></li>
+                        <li><a href="#">enlace</a></li>
+                        <li><a href="#">enlace</a></li>
+                        <li><a href="#">enlace</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="./img/32.png" alt="">
+                </div>
+            </article>
+        </section>
+    </footer>
+</body>
+
+</html>
